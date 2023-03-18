@@ -1,0 +1,67 @@
+### Create a new student
+POST http://localhost:3000/students
+Content-Type: application/json
+
+{
+    "firstName": "Test",
+    "lastName" : "Test",
+    "age" : 18,
+    "gender" : "Male",
+    "email": "testtest@example.com",
+    "phoneNumber": "111-555-5555"
+}
+
+### Get all students
+GET http://localhost:3000/students
+
+### Get a student by id
+GET http://localhost:3000/students/{studentId}
+
+### Update a student by id
+PUT http://localhost:3000/students/{studentId}
+Content-Type: application/json
+
+{
+    "firstName": "Jane",
+    "lastName" : "Deo",
+    "age" : 26,
+    "gender" : "Female",
+    "email": "janeupdated@example.com",
+    "phoneNumber": "666-666-6666"
+}
+
+### Delete a student by id
+DELETE http://localhost:3000/students/{studentId}
+
+### Create a new homework
+POST http://localhost:3000/homeworks
+Content-Type: application/json
+
+{
+    "title": "Undone homework",
+    "description": "Solve the problems on pages 20-25",
+    "dueDate": "2023-04-10",
+    "completed": false,
+    "student": "64158fc65c8e4105f1cf1a80"
+}
+
+### Get all homeworks
+GET http://localhost:3000/homeworks
+
+### Get a homework by id
+GET http://localhost:3000/homeworks/{homeworkId}
+
+### Update a homework by id
+PUT http://localhost:3000/homeworks/{homeworkId}
+Content-Type: application/json
+
+{
+    "title": "homework done",
+    "description": "Solved the problems on pages 20-25",
+    "dueDate": "2023-04-15",
+    "completed": true,
+    "student": "64158fc65c8e4105f1cf1a80"
+}
+
+### Delete a homework by id
+DELETE http://localhost:3000/homeworks/{homeworkId}
