@@ -37,6 +37,8 @@ To set up the project on your local machine, follow these steps:
 
 The API will now be available at http://localhost:3000/.
 
+Note: MongoDB server connected to 'mongodb://127.0.0.1/mydatabase' in the server.js for my computer, if that doesn't work for you you can set it up to 'mongodb://localhost:27017/mydatabase'
+
 **USAGE**
 
 You can test the API using any API testing tool like Postman or the Rest Client extension in VSCode. The project comes with a rest.http file which contains sample requests that you can use to test the API.
